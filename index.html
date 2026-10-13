@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій сайт</title>
+  <link rel="stylesheet" href="style.css">
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Ласкаво просимо на мій сайт!</h1>
+        <p>Це навчальний сайт про створення вебсторінок. Тут можна дізнатися про основні вебтехнології та їх використання.</p>
+        <a class="button" href="#about">Дізнатися більше</a>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <h2>Про сайт</h2>
+      <p>Сайт створено в межах практичної роботи. Його мета — показати, як за допомогою HTML, CSS і JavaScript можна створити просту та зручну вебсторінку.</p>
+    </section>
+
+    <section class="section light" id="technologies">
+      <div class="container">
+        <h2>Основні технології</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>HTML</h3>
+            <p>Створює структуру сторінки: заголовки, текст, зображення та посилання.</p>
+          </article>
+          <article class="card">
+            <h3>CSS</h3>
+            <p>Допомагає оформити сайт: задає кольори, шрифти, відступи та розташування елементів.</p>
+          </article>
+          <article class="card">
+            <h3>JavaScript</h3>
+            <p>Додає прості інтерактивні можливості та реакцію на дії користувача.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2>Контакти</h2>
+      <p>Це приклад простого контактного розділу.</p>
+      <form id="contactForm">
+        <label for="name">Ім’я</label>
+        <input id="name" name="name" type="text" placeholder="Введіть ім’я" required>
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ваше повідомлення" required></textarea>
+        <button class="button" type="submit">Надіслати</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Практична робота № 34 - Створення вебсайту</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

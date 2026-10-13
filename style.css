@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(100% - 40px, 1000px);
+  margin: 0 auto;
+}
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  color: #1769aa;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #1769aa;
+}
+
+.hero {
+  padding: 70px 0;
+  background: #eaf4fc;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  color: #174f7a;
+  font-size: clamp(30px, 5vw, 42px);
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 4px;
+  background: #1769aa;
+  color: white;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #105487;
+}
+
+.section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #174f7a;
+}
+
+.light {
+  background: #f5f7f9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 22px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: white;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1769aa;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+form {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#formMessage {
+  margin: 4px 0 0;
+  color: #176b35;
+}
+
+footer {
+  padding: 18px 0;
+  background: #174f7a;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .header-content {
+    padding: 12px 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
